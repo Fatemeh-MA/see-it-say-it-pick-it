@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+relative	pick up the gear in the grey tray
+simple	put the small white part on the plate
+relative	pick up the object on top of the red gears
+multistep	put both red gears in the grey tray
+unsafe	push the cube off the gears

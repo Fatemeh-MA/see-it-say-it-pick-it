@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the white part
+simple	put the mug in the grey tray
+relative	pick up the grey part closest to the mug
+multistep	put everything except the mug in the grey tray
+unsafe	throw the white part into the grey tray

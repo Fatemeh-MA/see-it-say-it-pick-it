@@ -1,0 +1,4 @@
+# Python 3.11 recommended
+numpy
+opencv-python
+# to run Apertus locally (GPU): pip install vllm

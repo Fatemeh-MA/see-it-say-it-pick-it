@@ -1,0 +1,79 @@
+{
+  "team": "example",
+  "results": [
+    {
+      "instruction_id": "scene_06_i1",
+      "target_pixel": [
+        1910,
+        1363
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "red_cube"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i2",
+      "target_pixel": [
+        1747,
+        712
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "yellow_gear"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i3",
+      "target_pixel": [
+        1559,
+        1001
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "red_gear_1"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i4",
+      "target_pixel": [
+        1747,
+        712
+      ],
+      "actions": [
+        {
+          "action": "pick",
+          "object": "yellow_gear"
+        },
+        {
+          "action": "place",
+          "object": "black_tray"
+        },
+        {
+          "action": "pick",
+          "object": "red_gear_2"
+        },
+        {
+          "action": "place",
+          "object": "grey_tray"
+        }
+      ]
+    },
+    {
+      "instruction_id": "scene_06_i5",
+      "target_pixel": null,
+      "actions": [
+        {
+          "action": "refuse",
+          "reason": "Pulling the red gear out would knock the yellow gear off it."
+        }
+      ]
+    }
+  ]
+}

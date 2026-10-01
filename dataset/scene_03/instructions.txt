@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the yellow gear
+relative	pick up the red gear on the left
+relative	pick up the second red gear from the right
+multistep	put all the red gears in the grey tray
+ambiguous	pick up the red gear

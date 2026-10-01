@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the mandarin
+relative	pick up the red gear farthest from the saucer
+relative	pick up the object lying on the grey part
+multistep	put the grey part under the red cube on the plate
+impossible	put the mandarin on the plate and leave it where it is

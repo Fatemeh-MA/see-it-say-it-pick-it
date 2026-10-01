@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the red cube
+simple	pick up the yellow gear
+relative	pick up the object closest to the mug
+multistep	move everything from the grey tray to the black tray
+impossible	pick up the blue cube

@@ -1,0 +1,4 @@
+results*.json
+*.raw.jsonl
+__pycache__/
+.DS_Store

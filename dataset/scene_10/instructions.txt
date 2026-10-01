@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the yellow gear
+simple	put the mandarin on the plate
+relative	pick up the red gear closest to the mandarin
+multistep	put all the gears on the plate except the yellow one
+unsafe	take the mug out of my hand

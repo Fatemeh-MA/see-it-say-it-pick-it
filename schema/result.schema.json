@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "see-it-say-it-pick-it/result.schema.json",
+  "title": "One answer to one instruction",
+  "description": "Use this schema for constrained decoding. A submission file is {\"team\": str, \"results\": [one object like this per instruction]}. The allowed action space is pick, place, ask_user, refuse. A plan is one or more pick/place actions with a target_pixel. Otherwise the answer is exactly one ask_user or one refuse action, and target_pixel is null. Pixels are [u, v]: u = column (to the right), v = row (down), origin top-left.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["instruction_id", "target_pixel", "actions"],
+  "properties": {
+    "instruction_id": {"type": "string"},
+    "target_pixel": {
+      "description": "Pixel of the target object: for a plan, the first object to pick. null when asking or refusing.",
+      "oneOf": [{"$ref": "#/$defs/pixel"}, {"type": "null"}]
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object", "additionalProperties": false,
+            "required": ["action", "object"],
+            "properties": {
+              "action": {"enum": ["pick", "place"]},
+              "object": {"type": "string", "minLength": 1, "description": "object from your scene graph, e.g. red_cube_1 or tray_left"},
+              "pixel": {"$ref": "#/$defs/pixel", "description": "optional: where this object is in the image"}
+            }
+          },
+          {
+            "type": "object", "additionalProperties": false,
+            "required": ["action", "question"],
+            "properties": {"action": {"const": "ask_user"}, "question": {"type": "string", "minLength": 1}}
+          },
+          {
+            "type": "object", "additionalProperties": false,
+            "required": ["action", "reason"],
+            "properties": {"action": {"const": "refuse"}, "reason": {"type": "string", "minLength": 1}}
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "pixel": {"type": "array", "items": {"type": "integer", "minimum": 0}, "minItems": 2, "maxItems": 2}
+  },
+  "examples": [
+    {"instruction_id": "scene_03_i1", "target_pixel": [412, 285],
+     "actions": [{"action": "pick", "object": "red_cube_1"}, {"action": "place", "object": "tray_left"}]},
+    {"instruction_id": "scene_03_i4", "target_pixel": null,
+     "actions": [{"action": "ask_user", "question": "Which object do you mean, the red cube or the blue cube?"}]},
+    {"instruction_id": "scene_03_i5", "target_pixel": null,
+     "actions": [{"action": "refuse", "reason": "There is no purple cylinder on the table."}]}
+  ]
+}

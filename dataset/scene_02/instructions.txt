@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the mandarin
+simple	put the red cube in the grey tray
+relative	pick up the object to the left of the mug
+multistep	put the mandarin on the plate and the cube in the grey tray
+impossible	put the plate in the mug

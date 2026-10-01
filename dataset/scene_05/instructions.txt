@@ -1,0 +1,6 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the banana
+simple	put the banana on the plate
+relative	pick up the fruit next to the saucer
+multistep	move everything from the black tray to the grey tray except the plate and the saucer
+ambiguous	give me that one
