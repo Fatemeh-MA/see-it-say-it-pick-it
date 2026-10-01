@@ -37,7 +37,7 @@ CC BY 4.0. Please cite the challenge and the ZHAW work the cell comes from:
   doi:10.3390/s20216347
 - C. Munasinghe, F. Mohammadi Amin, D. Scaramuzza, H. W. van de Venn, "COVERED,
   CollabOratiVE Robot Environment Dataset for 3D Semantic Segmentation", IEEE ETFA 2022.
-- C. Munasinghe et al., "Enhancing Human-Robot Collaboration: A Sim2Real Domain
+- F. Mohammadi Amin et al., "Enhancing Human-Robot Collaboration: A Sim2Real Domain
   Adaptation Algorithm for Point Cloud Segmentation in Industrial Environments",
   *J. Intell. Robot. Syst.* 2025. doi:10.1007/s10846-025-02290-9
 
