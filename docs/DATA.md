@@ -16,7 +16,7 @@ dataset/
 
 The scene folders hold no labels and no scene graph: finding the objects is part of the
 challenge. The ground truth is there so you can score yourselves. Do not feed it to
-your pipeline; the held-out test on the final day has none.
+your pipeline; the held-out scenes, released on 15.10, come without answers.
 
 ```python
 from scene_io import load_scene, pixel_to_robot

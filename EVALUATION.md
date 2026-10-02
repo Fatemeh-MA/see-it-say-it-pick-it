@@ -104,5 +104,15 @@ choice.
 
 ## The held-out test
 
-On the final day, finalists get five unseen scenes and 30 minutes. Their results are
-scored with the same script against ground truth that is not published.
+On **15.10 at 12:00** five new scenes with 40 instructions appear in `heldout/`, without
+answers. Run your pipeline on them and submit `results_heldout.json` with your Devpost
+entry by **16.10 at 12:00**:
+
+```
+python run.py --data heldout --out results_heldout.json   # your own command
+```
+
+We score it with the same script against answers that are not published. The answers
+must come from your code: we re-run the top teams' pipelines on the held-out scenes to
+check. The public scenes' answers are public, so the held-out score is what shows
+whether a pipeline really works.
