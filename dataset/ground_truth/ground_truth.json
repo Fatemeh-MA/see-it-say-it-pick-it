@@ -497,9 +497,10 @@
       "instruction": "pick up the red gear closest to the mandarin",
       "expected": "plan",
       "targets": [
-        "red_gear_1"
+        "red_gear_1",
+        "red_gear_2"
       ],
-      "reference_plan": "pick(red_gear_1)"
+      "reference_plan": "pick(red_gear_1) or pick(red_gear_2)  [both red gears are equally close to the mandarin]"
     },
     {
       "instruction_id": "scene_10_i4",
