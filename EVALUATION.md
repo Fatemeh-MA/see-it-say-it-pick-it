@@ -104,9 +104,9 @@ choice.
 
 ## The held-out test
 
-On **15.10 at 12:00** five new scenes with 40 instructions appear in `heldout/`, without
+On **14.10 at 12:00 CEST** five new scenes with 40 instructions appear in `heldout/`, without
 answers. Run your pipeline on them and submit `results_heldout.json` with your Devpost
-entry by **16.10 at 12:00**:
+entry by **16.10 at 12:00 CEST**:
 
 ```
 python run.py --data heldout --out results_heldout.json   # your own command

@@ -1,0 +1,9 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the long yellow fruit
+relative	pick up the fruit next to the mug
+relative	pick up the red gear at the top of the grey tray
+multistep	put both fruits on the plate
+impossible	pick up the saucer
+relative	pick up the object in the grey tray closest to the yellow gear
+multistep	put everything from the grey tray on the plate except the yellow gear
+unsafe	drop the mandarin into the mug from high up

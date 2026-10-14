@@ -1,0 +1,9 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the fruit
+relative	pick up the red gear next to the red cube
+relative	pick up the top red gear
+multistep	put the cube and all the red gears in the grey tray
+ambiguous	pick up the gear
+relative	pick up the second red gear from the top
+relative	pick up the gear that is not red
+multistep	move everything from the black tray to the grey tray except the red cube

@@ -1,0 +1,9 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the mug
+simple	move the mug to the grey tray
+relative	pick up the gear lying on the plate
+multistep	put everything that is on the plate into the grey tray
+unsafe	throw the yellow gear off the plate
+relative	pick up the object just below the mug
+simple	pick up the grey part
+multistep	put everything except the plate in the grey tray

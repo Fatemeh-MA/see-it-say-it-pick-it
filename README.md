@@ -90,7 +90,7 @@ refusing everything scores 0. A worked example is in [EVALUATION.md](EVALUATION.
 1. A public GitHub repository under Apache 2.0, with a README that lets someone else
    reproduce your result in under 15 minutes.
 2. Your results file in this format, scored with `starter/evaluate.py`.
-3. `results_heldout.json`: your answers for the five held-out scenes, **released on 14.10 at 12:00 ** in `heldout/`, due 16.10 at 12:00. Your repository needs **one command** that runs your pipeline on any folder of scenes; we use it to re-run the top teams.
+3. `results_heldout.json`: your answers for the five held-out scenes, **released on 14.10 at 12:00** in `heldout/`, due 16.10 at 12:00. Your repository needs **one command** that runs your pipeline on any folder of scenes; we use it to re-run the top teams.
 4. A 1–2 page report on where Apertus had difficulty.
 5. Five slides (PDF).
  5.1 Team and approach in one sentence

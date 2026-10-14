@@ -1,0 +1,9 @@
+# <category><TAB><instruction>, written from scene_plan.json
+simple	pick up the small white part
+simple	put the red gear on the plate
+relative	pick up the grey part closest to the plate
+multistep	put both grey parts and the small white part in the grey tray
+ambiguous	put that part in the tray
+relative	pick up the gear closest to the bottom of the image
+multistep	put everything except the mug and the plate in the grey tray
+impossible	put the mug inside the small white part
